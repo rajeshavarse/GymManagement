@@ -1,0 +1,208 @@
+@charset "UTF-8";
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+    text-align:center
+}
+
+
+
+footer {
+	position:fixed;
+    background: #35424a;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px;
+   bottom:0px;
+   right:10%;
+   left:10%
+}
+
+table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #dddddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+button, .btn {
+    display: inline-block;
+    font-size: 16px;
+    color: white;
+    background: #35424a;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.btn{
+    padding: 5px 20px; /* Padding for a button-like appearance */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline */
+    cursor: pointer; /* Pointer cursor on hover */
+        border-radius: 5px; /* Rounded corners */
+    border: none; /* Remove border */
+    
+}
+.btn:hover {
+    background: #e8491d;
+    text-decoration: none;
+}
+button:hover {
+    background: #e8491d;
+}
+
+form {
+    margin: 20px 0;
+    width:400px;
+    padding:10px;
+    border:1px solid lightgrey;
+    border-radius:5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form input[type="time"],
+form select {
+    width: 100%; 
+    padding: 5px;
+    margin: 5px 0;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form input[type="submit"]{
+    background-color: #35424a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #e8491d;
+}
+
+.error {
+    color: #e8491d;
+    margin-bottom: 20px;
+}
+
+.success {
+    color: #4caf50;
+    margin-bottom: 20px;
+}
+
+
+/* Form Specific Styles */
+form label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+form .form-group {
+    margin-bottom: 15px;
+}
+
+form .form-group input {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form .form-group select {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form .form-group textarea {
+    padding: 10px;
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+}
+
+/* Specific to participant-list.jsp */
+.participant-table {
+    margin-top: 20px;
+}
+
+.participant-table th, .participant-table td {
+    padding: 10px;
+    text-align: left;
+}
+
+.participant-table th {
+    background-color: #35424a;
+    color: white;
+}
+
+.participant-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    header #branding, header nav, header nav ul {
+        float: none;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    header nav ul {
+        padding: 0;
+    }
+
+    header nav ul li {
+        display: block;
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
